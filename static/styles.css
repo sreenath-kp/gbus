@@ -1,0 +1,93 @@
+/* Reset some default styles to avoid inconsistencies */
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set up basic layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.map-container {
+  flex: 4;
+}
+
+/* Style the sidebar content */
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sidebar .destination-form {
+  margin-bottom: 20px;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.sidebar input[type="text"] {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.sidebar button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #45a049;
+}
+
+.sidebar h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.sidebar .bus-routes {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar .bus-routes li {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Make the map container responsive */
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Apply some additional minimalistic styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.container {
+  box-sizing: border-box;
+}
